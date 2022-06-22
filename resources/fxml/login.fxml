@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.LoginController">
+   <children>
+      <Label layoutX="250.0" layoutY="60.0" text="Application">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldUsername" layoutX="225.0" layoutY="173.0" promptText="Username" />
+      <Button fx:id="buttonConnect" layoutX="226.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleConnect" prefHeight="26.0" prefWidth="151.0" text="Start" />
+      <Label fx:id="labelError" layoutX="237.0" layoutY="238.0" text=" " textFill="RED" />
+   </children>
+</AnchorPane>

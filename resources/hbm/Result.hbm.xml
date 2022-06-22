@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Result"
+           table="results">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property name="user" column="id_user" type="java.lang.Integer"/>
+        <property name="game" column="id_game" type="java.lang.Integer"/>
+        <property name="points" column="points" type="java.lang.Integer"/>
+        <property name="date" column="date" type="java.time.LocalDateTime"/>
+        <property name="word1" column="word1" type="java.lang.Boolean"/>
+        <property name="word2" column="word2" type="java.lang.Boolean"/>
+        <property name="word3" column="word3" type="java.lang.Boolean"/>
+    </class>
+</hibernate-mapping>

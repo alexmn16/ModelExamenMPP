@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Game"
+           table="games">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property name="letters" column="letters" type="text"/>
+        <property name="word1" column="word1" type="text"/>
+        <property name="word2" column="word2" type="text"/>
+        <property name="word3" column="word3" type="text"/>
+    </class>
+</hibernate-mapping>
